@@ -21,7 +21,6 @@ column1 = [
 layout = [[sg.Column(column1), sg.Multiline(size=(50, 15), key='ML_SearchRes')]]
 window = sg.Window('Second Lab', layout, default_element_size=(50, 1), grab_anywhere=False)
 
-# xml_file=Searcher.XML('myfile.xml')
 while True:
     event, values = window.read()
     filter = {}
@@ -43,7 +42,7 @@ while True:
         if values['CB_Date']:
             filter['Date'] = values['IC_Date']
         if values['R_DOM'] or values['R_SAX']:
-            teachers = Searcher.search('myfile.xml', (Searcher.DOM_Searcher() if values['R_DOM'] else Searcher.SAX_Searcher()), filter)
+            teachers = Searcher.search('mydata.xml', (Searcher.DOM_Searcher() if values['R_DOM'] else Searcher.SAX_Searcher()), filter)
             window['ML_SearchRes'].update('')
             for teacher in teachers:
                 window['ML_SearchRes'].write('Name: ' + teacher.Name + '\n')
