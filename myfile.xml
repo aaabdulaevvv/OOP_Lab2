@@ -1,0 +1,84 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="teachers.xsl"?>
+
+<teacherDataBase>
+    <teacher
+        Name="Volodymyr Shevchenko"
+        Faculty="Cybernetics"
+        Department="Math"
+        Material="Discrete Math"
+        MaterialT="Article"
+        Extent="30"
+        Date="12.12.1912">
+    </teacher>
+    
+    <teacher
+        Name="Lyudmila Omelchuk"
+        Faculty="Cybernetics"
+        Department="Informatics"
+        Material="OOP"
+        MaterialT="Project"
+        Extent="150"
+        Date="02.05.2002">
+    </teacher>
+    
+    <teacher
+        Name="Oleksander Molodtsov"
+        Faculty="Cybernetics"
+        Department="Math"
+        Material="Matan"
+        MaterialT="Dissertation"
+        Extent="500"
+        Date="23.05.1962">
+    </teacher>
+    
+    <teacher
+        Name="Oleksander Bedov"
+        Faculty="Lyceum"
+        Department="Math"
+        Material="Algebra"
+        MaterialT="Tutorial"
+        Extent="60"
+        Date="28.03.1959">
+    </teacher>
+    
+    <teacher
+        Name="Tatiana Vlasenko"
+        Faculty="Lyceum"
+        Department="Informatics"
+        Material="Programming"
+        MaterialT="Project"
+        Extent="20"
+        Date="24.10.1981">
+    </teacher>
+
+    <teacher
+        Name="N P"
+        Faculty="Cybernetics"
+        Department="Informatics"
+        Material="OOP"
+        MaterialT="Report"
+        Extent="30"
+        Date="04.09.2003">
+    </teacher>
+
+    <teacher
+        Name="Irina Kovalyova"
+        Faculty="Lyceum"
+        Department="Culture"
+        Material="Literature"
+        MaterialT="Essay"
+        Extent="5"
+        Date="14.03.1596">
+    </teacher>
+
+    <teacher
+        Name="Serhiy Naboka"
+        Faculty="Cybernetics"
+        Department="Culture"
+        Material="VDUS"
+        MaterialT="Essay"
+        Extent="20"
+        Date="01.01.2000">
+    </teacher>
+</teacherDataBase>
