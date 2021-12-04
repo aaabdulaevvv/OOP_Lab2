@@ -155,8 +155,8 @@ class teachersHandler(xml.sax.ContentHandler):
 
 
 def transform():
-    myfile = ET.parse('myfile.xml')
+    mydata = ET.parse('mydata.xml')
     teachers = ET.parse('teachers.xsl')
     transformation = ET.XSLT(teachers)
-    newfile = transformation(myfile)
+    newfile = transformation(mydata)
     newfile.write("output-toc.html", pretty_print=True)
