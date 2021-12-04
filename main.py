@@ -1,5 +1,5 @@
 import PySimpleGUI as sg
-import Searcher
+import searcher
 import xml.etree.ElementTree as xml
 
 sg.theme('GreenTan')
@@ -42,7 +42,7 @@ while True:
         if values['CB_Date']:
             filter['Date'] = values['IC_Date']
         if values['R_DOM'] or values['R_SAX']:
-            teachers = Searcher.search('mydata.xml', (Searcher.DOM_Searcher() if values['R_DOM'] else Searcher.SAX_Searcher()), filter)
+            teachers = searcher.search('mydata.xml', (searcher.DOM_Searcher() if values['R_DOM'] else searcher.SAX_Searcher()), filter)
             window['ML_SearchRes'].update('')
             for teacher in teachers:
                 window['ML_SearchRes'].write('Name: ' + teacher.Name + '\n')
@@ -54,7 +54,7 @@ while True:
                 window['ML_SearchRes'].write('Date: ' + teacher.Date + '\n\n')
 
     elif event == 'B_HTML':
-        Searcher.transform()
+        searcher.transform()
 
 
 window.close()
